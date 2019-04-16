@@ -30,6 +30,7 @@ module.exports = {
       // Paths
       distPath: path.resolve(__dirname, './dist'),
       error500Html: null,
+      logError: (error, request) => console.log(error, request),
       templatePath: path.resolve(__dirname, './dist/index.html'),
       serviceWorkerPath: path.resolve(__dirname, './dist/service-worker.js'),
       // Directives fallback
